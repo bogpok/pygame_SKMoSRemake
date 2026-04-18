@@ -47,7 +47,10 @@ def main():
 					yoh.runs(1)
 				elif event.key == pg.K_a:
 					yoh.runs(-1)
-					print("wtf")
+
+				if event.key == pg.K_l:
+					yoh.jump(1)
+					
 			if event.type == pg.KEYUP:
 				yoh.runs(0)
 
